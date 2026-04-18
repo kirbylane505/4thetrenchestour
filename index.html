@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>4 THE TRENCHES TOUR — 42 Dugg x Babyface Ray</title>
+<meta name="description" content="Official 4 The Trenches Tour — 42 Dugg & Babyface Ray. 29 cities. Get tickets, shop exclusive merch, and join the movement. Detroit to the world.">
+<meta name="theme-color" content="#0a0a0a">
+
+<!-- OG / Social Cards -->
+<meta property="og:title" content="4 THE TRENCHES TOUR — 42 Dugg x Babyface Ray">
+<meta property="og:description" content="29 cities. May 30 - July 31, 2026. Detroit to the world and back. Get tickets now.">
+<meta property="og:image" content="assets/images/tour_flyer.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="4 THE TRENCHES TOUR — 42 Dugg x Babyface Ray">
+<meta name="twitter:description" content="29 cities. May 30 - July 31, 2026. Detroit to the world.">
+<meta name="twitter:image" content="assets/images/tour_flyer.jpg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>4️⃣</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0a;--bg2:#111;--bg3:#1a1a1a;--chrome:#b8b8b8;--silver:#888;--red:#8b1a1a;--red-bright:#dc2626;--neon:#ff3333;--white:#fff;--dim:#666;--dim2:#444;--border:rgba(255,255,255,.06);--glow:0 0 60px rgba(220,38,38,.2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--white);overflow-x:hidden}
+::selection{background:var(--red-bright);color:#fff}
+
+/* GRAIN OVERLAY */
+.grain{position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.04;
+background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,10,.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 32px;height:60px;transition:all .3s}
+nav.scrolled{background:rgba(10,10,10,.95);height:54px}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:4px;color:var(--chrome)}
+.nav-logo span{color:var(--red-bright)}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:.65rem;letter-spacing:3px;text-transform:uppercase;font-weight:600;transition:.3s}
+.nav-links a:hover{color:var(--red-bright)}
+.nav-cta{background:var(--red-bright);color:var(--white);padding:8px 20px;border-radius:2px;font-size:.6rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;text-decoration:none;transition:.3s}
+.nav-cta:hover{background:var(--white);color:var(--bg)}
+
+/* HERO */
+#hero{height:100vh;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.hero-bg{position:absolute;inset:0;background:url('assets/images/tour_flyer.jpg') center top/cover;animation:slowZoom 30s ease-in-out infinite alternate;filter:brightness(.35) contrast(1.1) saturate(.7)}
+@keyframes slowZoom{from{transform:scale(1)}to{transform:scale(1.1)}}
+.hero-smoke{position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 30%,rgba(0,0,0,.8) 100%)}
+.hero-grad{position:absolute;bottom:0;left:0;right:0;height:50%;background:linear-gradient(transparent,var(--bg))}
+.hero-content{position:relative;z-index:2;text-align:center;max-width:800px;padding:0 24px}
+.hero-pre{font-size:.55rem;letter-spacing:10px;text-transform:uppercase;color:var(--red-bright);margin-bottom:20px;font-weight:600}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:7rem;line-height:.85;letter-spacing:6px;color:var(--white);text-shadow:0 0 80px rgba(220,38,38,.15)}
+.hero-title .red{color:var(--red-bright)}
+.hero-artists{font-family:'Oswald',sans-serif;font-size:1.8rem;letter-spacing:8px;color:var(--chrome);margin-top:16px;font-weight:300}
+.hero-artists span{color:var(--red-bright);font-weight:700}
+.hero-sub{font-size:.7rem;color:var(--dim);letter-spacing:4px;margin-top:12px;text-transform:uppercase}
+.hero-btns{display:flex;gap:14px;justify-content:center;margin-top:36px}
+.btn-red{background:var(--red-bright);color:var(--white);padding:16px 40px;border:none;border-radius:2px;font-size:.7rem;font-weight:700;letter-spacing:4px;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:.3s}
+.btn-red:hover{box-shadow:0 0 40px rgba(220,38,38,.4);transform:translateY(-2px)}
+.btn-chrome{border:1px solid var(--chrome);color:var(--chrome);padding:16px 40px;border-radius:2px;font-size:.7rem;font-weight:700;letter-spacing:4px;text-transform:uppercase;text-decoration:none;transition:.3s;background:transparent}
+.btn-chrome:hover{background:var(--chrome);color:var(--bg)}
+
+/* COUNTDOWN */
+.countdown{display:flex;gap:20px;justify-content:center;margin-top:32px}
+.cd-block{text-align:center}
+.cd-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:var(--red-bright);line-height:1}
+.cd-lbl{font-size:.5rem;letter-spacing:3px;color:var(--dim);text-transform:uppercase;margin-top:2px}
+
+/* SECTIONS */
+.sec{padding:80px 32px;max-width:1100px;margin:0 auto}
+.sec-full{padding:80px 32px;position:relative}
+.sec-full .inner{max-width:1100px;margin:0 auto;position:relative;z-index:2}
+.sec-tag{font-size:.55rem;letter-spacing:8px;text-transform:uppercase;color:var(--red-bright);font-weight:600;margin-bottom:10px}
+.sec-title{font-family:'Bebas Neue',sans-serif;font-size:3rem;letter-spacing:4px;margin-bottom:20px;line-height:1}
+.sec-title .red{color:var(--red-bright)}
+.sec-line{width:50px;height:2px;background:var(--red-bright);margin-bottom:24px}
+
+/* TOUR DATES */
+.dates-list{margin-top:24px}
+.date-row{display:grid;grid-template-columns:100px 1fr 1fr auto;align-items:center;gap:16px;padding:16px 20px;border-bottom:1px solid var(--border);transition:.3s}
+.date-row:hover{background:rgba(220,38,38,.03);border-color:rgba(220,38,38,.15)}
+.date-row.highlight{background:rgba(220,38,38,.06);border-left:3px solid var(--red-bright)}
+.dr-date{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;color:var(--chrome)}
+.dr-city{font-weight:700;font-size:.9rem}
+.dr-venue{font-size:.75rem;color:var(--dim)}
+.dr-btn{background:transparent;border:1px solid var(--red-bright);color:var(--red-bright);padding:8px 20px;border-radius:2px;font-size:.55rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;cursor:pointer;text-decoration:none;transition:.3s;white-space:nowrap}
+.dr-btn:hover{background:var(--red-bright);color:var(--white)}
+.dates-note{text-align:center;margin-top:20px;font-size:.65rem;color:var(--dim);letter-spacing:2px}
+
+/* MERCH */
+.merch-tabs{display:flex;gap:8px;margin-bottom:24px}
+.merch-tab{padding:10px 20px;background:var(--bg3);border:1px solid var(--border);color:var(--dim);font-size:.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:.3s;border-radius:2px}
+.merch-tab.active{background:var(--red-bright);color:var(--white);border-color:var(--red-bright)}
+.merch-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.merch-card{background:var(--bg3);border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:.3s;cursor:pointer}
+.merch-card:hover{border-color:var(--red-bright);transform:translateY(-4px);box-shadow:var(--glow)}
+.merch-img{aspect-ratio:1;background:linear-gradient(135deg,#1a1a1a,#222);display:flex;align-items:center;justify-content:center;font-size:.6rem;color:var(--dim);letter-spacing:2px;text-transform:uppercase;position:relative;overflow:hidden}
+.merch-img img{width:100%;height:100%;object-fit:cover}
+.merch-info{padding:16px}
+.merch-name{font-family:'Oswald',sans-serif;font-size:.95rem;font-weight:600;margin-bottom:4px}
+.merch-price{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;color:var(--red-bright)}
+.merch-tag{position:absolute;top:10px;right:10px;background:var(--red-bright);color:var(--white);font-size:.45rem;font-weight:700;letter-spacing:2px;padding:4px 10px;text-transform:uppercase}
+.merch-sizes{display:flex;gap:4px;margin-top:8px}
+.merch-sizes span{width:28px;height:28px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:2px;font-size:.6rem;color:var(--dim);cursor:pointer;transition:.2s}
+.merch-sizes span:hover{border-color:var(--red-bright);color:var(--red-bright)}
+.add-cart{width:100%;background:var(--red-bright);color:var(--white);border:none;padding:10px;margin-top:10px;font-size:.6rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;cursor:pointer;transition:.3s;border-radius:2px}
+.add-cart:hover{background:var(--white);color:var(--bg)}
+
+/* FAN EXPERIENCE */
+.fan-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:24px}
+.fan-cell{aspect-ratio:1;background:var(--bg3);border:1px solid var(--border);border-radius:4px;overflow:hidden;position:relative;cursor:pointer;transition:.3s}
+.fan-cell:hover{border-color:var(--red-bright)}
+.fan-cell img{width:100%;height:100%;object-fit:cover}
+.fan-upload{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;aspect-ratio:1;background:var(--bg3);border:2px dashed var(--border);border-radius:4px;cursor:pointer;transition:.3s}
+.fan-upload:hover{border-color:var(--red-bright)}
+.fan-upload .icon{font-size:2rem;opacity:.3}
+.fan-upload .text{font-size:.6rem;color:var(--dim);letter-spacing:2px;text-transform:uppercase}
+
+/* CONTENT HUB */
+.content-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.content-card{background:var(--bg3);border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:.3s;cursor:pointer}
+.content-card:hover{border-color:var(--red-bright);transform:translateY(-3px)}
+.content-thumb{aspect-ratio:16/9;background:linear-gradient(135deg,#1a1a1a,#222);position:relative;overflow:hidden}
+.content-thumb img{width:100%;height:100%;object-fit:cover}
+.content-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.3);opacity:0;transition:.3s}
+.content-card:hover .content-play{opacity:1}
+.content-play span{width:50px;height:50px;background:var(--red-bright);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.content-meta{padding:14px}
+.content-type{font-size:.5rem;letter-spacing:2px;text-transform:uppercase;color:var(--red-bright);margin-bottom:4px}
+.content-title{font-family:'Oswald',sans-serif;font-size:.9rem}
+
+/* ARTIST STORY */
+.story-split{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:24px;align-items:center}
+.story-img{border-radius:4px;overflow:hidden;aspect-ratio:4/5;position:relative}
+.story-img img{width:100%;height:100%;object-fit:cover}
+.story-img::after{content:'';position:absolute;inset:0;border:1px solid rgba(220,38,38,.15);border-radius:4px}
+.story-text p{font-size:.88rem;color:var(--silver);line-height:1.9;margin-bottom:14px}
+.story-text strong{color:var(--white)}
+.story-quote{border-left:2px solid var(--red-bright);padding:14px 18px;margin:20px 0;font-size:1rem;color:var(--white);font-style:italic;line-height:1.5;background:rgba(220,38,38,.03)}
+
+/* NEWSLETTER */
+.newsletter-box{max-width:600px;margin:0 auto;text-align:center;padding:48px 32px;background:var(--bg3);border:1px solid var(--border);border-radius:4px}
+.nl-form{display:flex;gap:8px;margin-top:20px}
+.nl-form input{flex:1;background:var(--bg);border:1px solid var(--border);color:var(--white);padding:14px 18px;border-radius:2px;font-size:.85rem;font-family:'Inter',sans-serif}
+.nl-form input:focus{outline:none;border-color:var(--red-bright)}
+.nl-form button{background:var(--red-bright);color:var(--white);border:none;padding:14px 28px;border-radius:2px;font-size:.6rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;cursor:pointer;transition:.3s;white-space:nowrap}
+.nl-form button:hover{background:var(--white);color:var(--bg)}
+
+/* FAQ */
+.faq-item{border-bottom:1px solid var(--border);padding:16px 0}
+.faq-q{display:flex;align-items:center;justify-content:space-between;cursor:pointer;font-family:'Oswald',sans-serif;font-size:1rem;font-weight:500}
+.faq-q:hover{color:var(--red-bright)}
+.faq-a{max-height:0;overflow:hidden;transition:.4s;font-size:.85rem;color:var(--dim);line-height:1.7}
+.faq-item.open .faq-a{max-height:200px;padding-top:12px}
+.faq-icon{transition:.3s;font-size:1.2rem;color:var(--dim)}
+.faq-item.open .faq-icon{transform:rotate(45deg);color:var(--red-bright)}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:40px 32px;text-align:center}
+.f-logo{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:6px;color:var(--chrome);margin-bottom:6px}
+.f-logo span{color:var(--red-bright)}
+.f-links{display:flex;gap:20px;justify-content:center;margin:16px 0}
+.f-links a{color:var(--dim);text-decoration:none;font-size:.6rem;letter-spacing:2px;text-transform:uppercase;transition:.3s}
+.f-links a:hover{color:var(--red-bright)}
+.f-copy{font-size:.5rem;color:var(--dim2);letter-spacing:2px;margin-top:12px}
+
+/* SCROLL REVEAL */
+.reveal{opacity:0;transform:translateY(25px);transition:all .7s cubic-bezier(.4,0,.2,1)}
+.reveal.vis{opacity:1;transform:translateY(0)}
+
+/* RESPONSIVE */
+/* SPOTIFY EMBED */
+.spotify-section{padding:40px 32px;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.spotify-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.spotify-inner iframe{border-radius:12px}
+
+/* VIDEO MODAL */
+.video-modal{position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,.95);display:none;align-items:center;justify-content:center;padding:20px}
+.video-modal.active{display:flex}
+.video-modal-content{position:relative;width:100%;max-width:900px;aspect-ratio:16/9}
+.video-modal iframe{width:100%;height:100%;border:none;border-radius:8px}
+.video-modal-close{position:absolute;top:-40px;right:0;background:none;border:none;color:var(--white);font-size:2rem;cursor:pointer;opacity:.7;transition:.2s}
+.video-modal-close:hover{opacity:1}
+
+/* STICKY MOBILE CTA */
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:999;background:linear-gradient(transparent,var(--bg) 30%);padding:16px;display:none}
+.sticky-cta-btn{display:block;width:100%;background:var(--red-bright);color:var(--white);padding:16px;border:none;border-radius:4px;font-size:.75rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;text-align:center;text-decoration:none;box-shadow:0 0 30px rgba(220,38,38,.4)}
+
+/* MERCH IMPROVED */
+.merch-img{background:linear-gradient(145deg,#1a1a1a 0%,#252525 50%,#1a1a1a 100%)}
+.merch-img .placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;height:100%;color:var(--dim)}
+.merch-img .placeholder svg{width:48px;height:48px;opacity:.3}
+.merch-img .placeholder span{font-size:.55rem;letter-spacing:2px;text-transform:uppercase;opacity:.5}
+
+@media(max-width:768px){
+  nav{padding:0 16px}.nav-links{display:none}
+  .hero-title{font-size:4rem}.hero-artists{font-size:1.2rem;letter-spacing:4px}
+  .hero-btns{flex-direction:column;align-items:center}
+  .date-row{grid-template-columns:80px 1fr auto;gap:10px}
+  .dr-venue{display:none}
+  .merch-grid{grid-template-columns:1fr 1fr}
+  .fan-grid{grid-template-columns:repeat(3,1fr)}
+  .content-grid{grid-template-columns:1fr}
+  .story-split{grid-template-columns:1fr}
+  .nl-form{flex-direction:column}
+  .sec,.sec-full{padding:60px 16px}
+  .spotify-inner{grid-template-columns:1fr}
+  .sticky-cta{display:block}
+  body{padding-bottom:80px}
+}
+</style>
+</head>
+<body>
+
+<!-- GRAIN -->
+<div class="grain"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo"><span>4</span> THE TRENCHES</div>
+  <div class="nav-links">
+    <a href="#dates">Tour Dates</a>
+    <a href="#merch">Merch</a>
+    <a href="#fan">Fan Zone</a>
+    <a href="#story">The Story</a>
+    <a href="#dates" class="nav-cta">Get Tickets</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-smoke"></div>
+  <div class="hero-grad"></div>
+  <div class="hero-content">
+    <div class="hero-pre">Detroit &bull; Summer 2026 &bull; 29 Cities</div>
+    <h1 class="hero-title">4 THE<br><span class="red">TRENCHES</span><br>TOUR</h1>
+    <div class="hero-artists">42 <span>DUGG</span> &times; BABYFACE <span>RAY</span></div>
+    <div class="hero-sub">May 30 — July 31, 2026</div>
+    <div class="hero-btns">
+      <a href="#dates" class="btn-red">Get Tickets</a>
+      <a href="#merch" class="btn-chrome">Shop Merch</a>
+    </div>
+    <div class="countdown">
+      <div class="cd-block"><div class="cd-num" id="cd-d">--</div><div class="cd-lbl">Days</div></div>
+      <div class="cd-block"><div class="cd-num" id="cd-h">--</div><div class="cd-lbl">Hours</div></div>
+      <div class="cd-block"><div class="cd-num" id="cd-m">--</div><div class="cd-lbl">Min</div></div>
+      <div class="cd-block"><div class="cd-num" id="cd-s">--</div><div class="cd-lbl">Sec</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SPOTIFY PLAYERS -->
+<div class="spotify-section">
+  <div class="spotify-inner">
+    <iframe src="https://open.spotify.com/embed/artist/45gHcnDnMC15sgx3VL7ROG?utm_source=generator&theme=0" height="152" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <iframe src="https://open.spotify.com/embed/artist/3zZ88AwlTwfCJkowsFCvLA?utm_source=generator&theme=0" height="152" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+</div>
+
+<!-- TOUR DATES -->
+<div id="dates" class="sec-full" style="background:var(--bg2)">
+<div class="inner">
+  <div class="sec-tag">Tour Dates</div>
+  <div class="sec-title">29 CITIES. <span class="red">ONE MISSION.</span></div>
+  <div class="sec-line"></div>
+  <div class="dates-list reveal" id="datesList"></div>
+  <div class="dates-note">All dates subject to change. 18+ unless noted.</div>
+</div>
+</div>
+
+<!-- MERCH -->
+<div id="merch" class="sec">
+  <div class="sec-tag">Exclusive Merch</div>
+  <div class="sec-title">REP THE <span class="red">TRENCHES</span></div>
+  <div class="sec-line"></div>
+  <div class="merch-tabs">
+    <div class="merch-tab active" onclick="filterMerch('all')">All</div>
+    <div class="merch-tab" onclick="filterMerch('dugg')">42 Dugg</div>
+    <div class="merch-tab" onclick="filterMerch('ray')">Babyface Ray</div>
+    <div class="merch-tab" onclick="filterMerch('tour')">Tour Exclusive</div>
+  </div>
+  <div class="merch-grid reveal" id="merchGrid"></div>
+</div>
+
+<!-- FAN ZONE -->
+<div id="fan" class="sec-full" style="background:var(--bg2)">
+<div class="inner">
+  <div class="sec-tag">Fan Zone</div>
+  <div class="sec-title">SEE IT FROM <span class="red">EVERY ANGLE</span></div>
+  <div class="sec-line"></div>
+  <p style="font-size:.85rem;color:var(--dim);max-width:500px;line-height:1.7;margin-bottom:8px">Scan the QR code at each show. Upload your photos and videos. See the tour through the fans' eyes.</p>
+  <div class="fan-grid reveal">
+    <div class="fan-cell"><img src="assets/images/bfr_rolling_loud.jpg" alt="Babyface Ray — Rolling Loud"></div>
+    <div class="fan-cell"><img src="assets/images/42dugg_press_1.jpg" alt="42 Dugg"></div>
+    <div class="fan-cell"><img src="assets/images/bfr_radar.jpg" alt="Babyface Ray — On The Radar"></div>
+    <div class="fan-cell"><img src="assets/images/42dugg_press_2.jpg" alt="42 Dugg"></div>
+    <div class="fan-cell"><img src="assets/images/bfr_ron_artest.jpg" alt="42 Dugg x Babyface Ray — Ron Artest"></div>
+    <div class="fan-cell"><img src="assets/images/hero_slide_2.jpg" alt="42 Dugg live"></div>
+    <div class="fan-cell"><img src="assets/images/bfr_billboard.jpg" alt="Babyface Ray — Codeine Cowboy Billboard"></div>
+    <div class="fan-upload"><div class="icon">+</div><div class="text">Upload Yours</div></div>
+    <div class="fan-cell"><img src="assets/images/42dugg_press_3.jpg" alt="42 Dugg"></div>
+    <div class="fan-cell"><img src="assets/images/bfr_legend.jpg" alt="Babyface Ray — Legend"></div>
+    <div class="fan-cell"><img src="assets/images/42dugg_press_4.jpg" alt="42 Dugg"></div>
+    <div class="fan-cell"><img src="assets/images/bfr_basketball.jpg" alt="Babyface Ray — Hooping"></div>
+    <div class="fan-cell"><img src="assets/images/bfr_sincerely.jpg" alt="Babyface Ray — Sincerely Face"></div>
+    <div class="fan-cell"><img src="assets/images/hero_slide_3.jpg" alt="42 Dugg live"></div>
+    <div class="fan-cell"><img src="assets/images/bfr_netflix.jpg" alt="Babyface Ray — Netflix & Chill"></div>
+    <div class="fan-cell"><img src="assets/images/42dugg_press_5.jpg" alt="42 Dugg"></div>
+  </div>
+</div>
+</div>
+
+<!-- EXCLUSIVE CONTENT -->
+<div id="content" class="sec">
+  <div class="sec-tag">Exclusive</div>
+  <div class="sec-title">BEHIND THE <span class="red">SCENES</span></div>
+  <div class="sec-line"></div>
+  <div class="content-grid reveal">
+    <div class="content-card" onclick="openVideo('GErG9femMQk')"><div class="content-thumb"><img src="assets/images/bfr_rolling_loud.jpg" alt="We Paid"><div class="content-play"><span>&#9654;</span></div></div><div class="content-meta"><div class="content-type">Music Video</div><div class="content-title">Lil Baby x 42 Dugg — We Paid</div></div></div>
+    <div class="content-card" onclick="openVideo('BoB8C6TC6uU')"><div class="content-thumb"><img src="assets/images/bfr_ron_artest.jpg" alt="Ron Artest"><div class="content-play"><span>&#9654;</span></div></div><div class="content-meta"><div class="content-type">Music Video</div><div class="content-title">Babyface Ray & 42 Dugg — Ron Artest</div></div></div>
+    <div class="content-card" onclick="openVideo('30cqm1SBm-k')"><div class="content-thumb"><img src="assets/images/bfr_radar.jpg" alt="On The Radar"><div class="content-play"><span>&#9654;</span></div></div><div class="content-meta"><div class="content-type">Freestyle</div><div class="content-title">Babyface Ray — On The Radar Freestyle</div></div></div>
+    <div class="content-card" onclick="openVideo('mmD9Bv2csq4')"><div class="content-thumb"><img src="assets/images/bfr_rubberband.jpg" alt="Waymo"><div class="content-play"><span>&#9654;</span></div></div><div class="content-meta"><div class="content-type">Music Video</div><div class="content-title">Babyface Ray — Waymo Freestyle</div></div></div>
+    <div class="content-card" onclick="openVideo('gjqsq3XX8zg')"><div class="content-thumb"><img src="assets/images/42dugg_press_1.jpg" alt="Verified"><div class="content-play"><span>&#9654;</span></div></div><div class="content-meta"><div class="content-type">Interview</div><div class="content-title">42 Dugg — "We Paid" Verified</div></div></div>
+    <div class="content-card" onclick="openVideo('tAucxF4edAU')"><div class="content-thumb"><img src="assets/images/42dugg_press_2.jpg" alt="U-Digg"><div class="content-play"><span>&#9654;</span></div></div><div class="content-meta"><div class="content-type">Music Video</div><div class="content-title">Lil Baby ft. 42 Dugg & Veeze — U-Digg</div></div></div>
+  </div>
+</div>
+
+<!-- ARTIST STORY -->
+<div id="story" class="sec-full" style="background:var(--bg2)">
+<div class="inner">
+  <div class="sec-tag">The Story</div>
+  <div class="sec-title">WHAT <span class="red">"4 THE TRENCHES"</span> MEANS</div>
+  <div class="sec-line"></div>
+  <div class="story-split reveal">
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div class="story-img"><img src="assets/images/42dugg_press_6.jpg" alt="42 Dugg"></div>
+      <div class="story-img" style="aspect-ratio:16/9"><img src="assets/images/bfr_rolling_loud.jpg" alt="Babyface Ray performing"></div>
+    </div>
+    <div class="story-text">
+      <p>This isn't just a tour. It's a <strong>homecoming</strong>. It's a <strong>statement</strong>. It's for every block, every corner, every city that raised us. <strong>"4 The Trenches"</strong> is for the ones who never left and the ones who made it out.</p>
+      <div class="story-quote">"We doing this for Detroit. For the east side. For everybody who believed in us when nobody else did."</div>
+      <p><strong>42 Dugg</strong> (Dion Hayes) — CMG / 4PF / Interscope. From the Denby neighborhood on Detroit's east side. Released from prison in 2023, dropped <em>4eva Us Neva Them</em> and <em>Part 3</em>, and never looked back.</p>
+      <p><strong>Babyface Ray</strong> (Marcellus Register) — Wavy Gang / EMPIRE. Team Eastside original. Gold-certified "Ron Artest" with Dugg. <em>Codeine Cowboy</em> cemented him as Detroit's most consistent voice.</p>
+      <p>Two artists. One city. <strong>29 shows</strong>. Detroit to the world and back — the Fillmore, July 31st.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- NEWSLETTER -->
+<div class="sec">
+  <div class="newsletter-box reveal">
+    <div class="sec-tag" style="text-align:center">Join The Movement</div>
+    <div class="sec-title" style="text-align:center;font-size:2.2rem">JOIN <span class="red">THE TRENCHES</span></div>
+    <p style="font-size:.8rem;color:var(--dim);line-height:1.6;margin-top:8px">Early merch drops. Exclusive content. Presale codes. No spam.</p>
+    <div class="nl-form">
+      <input type="email" placeholder="Enter your email">
+      <button>Join</button>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div id="faq" class="sec-full" style="background:var(--bg2)">
+<div class="inner">
+  <div class="sec-tag">FAQ</div>
+  <div class="sec-title">NEED <span class="red">ANSWERS?</span></div>
+  <div class="sec-line"></div>
+  <div class="reveal">
+    <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q">Where can I buy tickets?<span class="faq-icon">+</span></div><div class="faq-a">Tickets are available through Ticketmaster and venue box offices. Click "Get Tickets" on any tour date above for direct links.</div></div>
+    <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q">What is the refund policy?<span class="faq-icon">+</span></div><div class="faq-a">Refund policies vary by venue and ticket provider. Check your confirmation email or the venue's website for their specific refund/exchange policy.</div></div>
+    <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q">How long does merch take to ship?<span class="faq-icon">+</span></div><div class="faq-a">Standard orders ship within 7-14 business days. Tour-exclusive items ship after the tour date. Expedited shipping available at checkout.</div></div>
+    <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q">Is there an age requirement?<span class="faq-icon">+</span></div><div class="faq-a">Most shows are 18+. Some venues are all-ages. Check the specific venue for age requirements. Valid ID required for entry.</div></div>
+    <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q">Can I meet the artists?<span class="faq-icon">+</span></div><div class="faq-a">VIP meet & greet packages are available for select dates. Check the ticket purchase page for VIP upgrade options.</div></div>
+    <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q">How does the fan photo upload work?<span class="faq-icon">+</span></div><div class="faq-a">At each show, scan the QR code displayed on screens. Upload your photos and videos from that night. Approved uploads appear in the Fan Zone gallery.</div></div>
+  </div>
+</div>
+</div>
+
+<!-- VIDEO MODAL -->
+<div class="video-modal" id="videoModal" onclick="closeVideo(event)">
+  <div class="video-modal-content">
+    <button class="video-modal-close" onclick="closeVideo()">&times;</button>
+    <iframe id="videoFrame" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta">
+  <a href="#dates" class="sticky-cta-btn">🎟️ Get Tickets</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f-logo"><span>4</span> THE TRENCHES TOUR</div>
+  <div class="f-links">
+    <a href="https://instagram.com/42_dugggg" target="_blank">@42_dugggg</a>
+    <a href="https://instagram.com/babyfaceray" target="_blank">@babyfaceray</a>
+    <a href="https://fo2dugg.com" target="_blank">fo2dugg.com</a>
+  </div>
+  <div style="font-size:.6rem;color:var(--dim);margin-top:8px">42 Dugg: CMG / 4PF / Interscope &bull; Babyface Ray: Wavy Gang / EMPIRE</div>
+  <div class="f-copy">Built by Heaven's Dynasty Digital &bull; &copy; 2026 All Rights Reserved</div>
+</footer>
+
+<script>
+// TOUR DATES DATA
+const TM='https://www.ticketmaster.com/42-dugg-tickets/artist/2637308';
+const tourDates = [
+  {date:'MAY 30',city:'Cincinnati, OH',venue:"Bogart's",link:TM},
+  {date:'MAY 31',city:'Cleveland, OH',venue:'House of Blues',link:TM},
+  {date:'JUN 2',city:'Columbus, OH',venue:'KEMBA Live!',link:TM},
+  {date:'JUN 4',city:'Pittsburgh, PA',venue:'The Roxian Theatre',link:TM},
+  {date:'JUN 6',city:'Rochester, NY',venue:'Waterstreet Music Hall',link:TM},
+  {date:'JUN 7',city:'Hartford, CT',venue:'The Webster',link:TM},
+  {date:'JUN 9',city:'New York, NY',venue:'Webster Hall',link:TM},
+  {date:'JUN 12',city:'Silver Spring, MD',venue:'The Fillmore',link:TM},
+  {date:'JUN 14',city:'Boston, MA',venue:'Big Night Live',link:TM},
+  {date:'JUN 19',city:'Raleigh, NC',venue:'The Ritz',link:TM},
+  {date:'JUN 20',city:'Charleston, SC',venue:'Charleston Music Hall',link:TM},
+  {date:'JUN 21',city:'Norfolk, VA',venue:'The NorVa',link:TM},
+  {date:'JUN 25',city:'Atlanta, GA',venue:'The Eastern',link:TM},
+  {date:'JUN 26',city:'Nashville, TN',venue:'Cannery Hall',link:TM},
+  {date:'JUN 27',city:'Joliet, IL',venue:'The Forge',link:TM},
+  {date:'JUN 28',city:'Milwaukee, WI',venue:'The Rave',link:TM},
+  {date:'JUN 30',city:'Minneapolis, MN',venue:'First Avenue',link:TM},
+  {date:'JUL 2',city:'Denver, CO',venue:'Summit Music Hall',link:TM},
+  {date:'JUL 7',city:'Houston, TX',venue:'Warehouse Live',link:TM},
+  {date:'JUL 9',city:'Phoenix, AZ',venue:'The Van Buren',link:TM},
+  {date:'JUL 10',city:'Los Angeles, CA',venue:'The Belasco',link:TM},
+  {date:'JUL 11',city:'Berkeley, CA',venue:'The UC Theater',link:TM},
+  {date:'JUL 12',city:'Sacramento, CA',venue:'Ace of Spades',link:TM},
+  {date:'JUL 14',city:'Salt Lake City, UT',venue:'Rockwell at The Complex',link:TM},
+  {date:'JUL 17',city:'Lincoln, NE',venue:'The Royal Grove',link:TM},
+  {date:'JUL 18',city:'Indianapolis, IN',venue:'Warren Performing Arts Center',link:TM},
+  {date:'JUL 19',city:'Louisville, KY',venue:"Old Forester's Paristown Hall",link:TM},
+  {date:'JUL 26',city:'Charlotte, NC',venue:'The Fillmore',link:TM},
+  {date:'JUL 31',city:'Detroit, MI',venue:'The Fillmore Detroit',link:TM,highlight:true},
+];
+
+// RENDER DATES
+const dl=document.getElementById('datesList');
+tourDates.forEach(d=>{
+  dl.innerHTML+=`<div class="date-row${d.highlight?' highlight':''}"><div class="dr-date">${d.date}</div><div class="dr-city">${d.city}</div><div class="dr-venue">${d.venue}</div><a href="${d.link}" target="_blank" class="dr-btn">${d.highlight?'HOMECOMING':'Tickets'}</a></div>`;
+});
+
+// MERCH DATA
+const merch=[
+  {name:'4 The Trenches Tour Tee',price:45,cat:'tour',tag:'EXCLUSIVE'},
+  {name:'Trenches Hoodie — Black',price:85,cat:'tour',tag:'EXCLUSIVE'},
+  {name:'42 Dugg "Part 3" Tee',price:40,cat:'dugg'},
+  {name:'Babyface Ray "Codeine Cowboy" Tee',price:40,cat:'ray'},
+  {name:'Detroit Snapback — Chrome',price:35,cat:'tour'},
+  {name:'Trenches Bundle (Hoodie + Tee)',price:110,cat:'tour',tag:'SAVE $20'},
+  {name:'42 Dugg Chain Logo Tee',price:40,cat:'dugg'},
+  {name:'Babyface Ray "Wavy Gang" Hoodie',price:80,cat:'ray'},
+  {name:'Tour Poster — Signed',price:60,cat:'tour',tag:'LIMITED'},
+];
+
+function renderMerch(filter){
+  const g=document.getElementById('merchGrid');
+  g.innerHTML='';
+  const icons={
+    tee:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.47a1 1 0 00.99.84H6v10a1 1 0 001 1h10a1 1 0 001-1V10h2.15a1 1 0 00.99-.84l.58-3.47a2 2 0 00-1.34-2.23z"/></svg>',
+    hoodie:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C9 2 7 4 7 4L3 7v6h3v9h12v-9h3V7l-4-3s-2-2-5-2z"/><circle cx="12" cy="8" r="2"/></svg>',
+    hat:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 15c0 2 3.58 4 8 4s8-2 8-4"/><path d="M4 15V9a8 8 0 1116 0v6"/><rect x="2" y="14" width="20" height="3" rx="1"/></svg>',
+    poster:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="14" y2="10"/></svg>'
+  };
+  const getIcon=(name)=>{
+    if(name.toLowerCase().includes('hoodie'))return icons.hoodie;
+    if(name.toLowerCase().includes('hat')||name.toLowerCase().includes('snapback'))return icons.hat;
+    if(name.toLowerCase().includes('poster'))return icons.poster;
+    return icons.tee;
+  };
+  merch.filter(m=>filter==='all'||m.cat===filter).forEach(m=>{
+    g.innerHTML+=`<div class="merch-card"><div class="merch-img">${m.tag?`<div class="merch-tag">${m.tag}</div>`:''}<div class="placeholder">${getIcon(m.name)}<span>Coming Soon</span></div></div><div class="merch-info"><div class="merch-name">${m.name}</div><div class="merch-price">$${m.price}</div><div class="merch-sizes"><span>S</span><span>M</span><span>L</span><span>XL</span><span>XXL</span></div><button class="add-cart">Add to Cart</button></div></div>`;
+  });
+}
+function filterMerch(cat){
+  document.querySelectorAll('.merch-tab').forEach(t=>t.classList.remove('active'));
+  event.target.classList.add('active');
+  renderMerch(cat);
+}
+renderMerch('all');
+
+// COUNTDOWN
+function updateCountdown(){
+  const target=new Date('2026-05-30T20:00:00');
+  const now=new Date();
+  const diff=target-now;
+  if(diff<=0)return;
+  const d=Math.floor(diff/864e5);
+  const h=Math.floor(diff%864e5/36e5);
+  const m=Math.floor(diff%36e5/6e4);
+  const s=Math.floor(diff%6e4/1e3);
+  document.getElementById('cd-d').textContent=String(d).padStart(2,'0');
+  document.getElementById('cd-h').textContent=String(h).padStart(2,'0');
+  document.getElementById('cd-m').textContent=String(m).padStart(2,'0');
+  document.getElementById('cd-s').textContent=String(s).padStart(2,'0');
+}
+updateCountdown();
+setInterval(updateCountdown,1000);
+
+// NAV SCROLL
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>50)});
+
+// SCROLL REVEAL
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('vis')})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// VIDEO MODAL
+function openVideo(id){
+  const modal=document.getElementById('videoModal');
+  const frame=document.getElementById('videoFrame');
+  frame.src=`https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+  modal.classList.add('active');
+  document.body.style.overflow='hidden';
+}
+function closeVideo(e){
+  if(e&&e.target!==e.currentTarget&&!e.target.classList.contains('video-modal-close'))return;
+  const modal=document.getElementById('videoModal');
+  const frame=document.getElementById('videoFrame');
+  modal.classList.remove('active');
+  frame.src='';
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeVideo()});
+</script>
+</body>
+</html>
